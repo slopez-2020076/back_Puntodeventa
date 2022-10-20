@@ -1,0 +1,97 @@
+<style>
+    * {
+    font-size: 12px;
+    font-family: 'Times New Roman';
+}
+
+td,
+th,
+tr,
+table {
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}
+
+td.producto,
+th.producto {
+    width: 75px;
+    max-width: 75px;
+}
+
+td.cantidad,
+th.cantidad {
+    width: 40px;
+    max-width: 40px;
+    word-break: break-all;
+}
+
+td.precio,
+th.precio {
+    width: 40px;
+    max-width: 40px;
+    word-break: break-all;
+}
+
+.centrado {
+    text-align: center;
+    align-content: center;
+}
+
+.ticket {
+    width: 155px;
+    max-width: 155px;
+}
+
+img {
+    max-width: inherit;
+    width: inherit;
+}
+</style>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"> <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="ticket">
+            <img
+                src="https://www.supermercadoslatorre.com/web/assets/images/LOGO2x.png"
+                alt="Logotipo">
+            <p class="centrado">Parzibyte's blog
+                <br>New New York
+                <br>23/08/2017 08:22 a.m.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio unitario</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{tableProducts}}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-right">Subtotal</td>
+                        <td>{{subtotal}}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">IVA</td>
+                        <td>{{IVA}}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">
+                            <h4>Total</h4>
+                        </td>
+                        <td>
+                            <h4>{{total}}</h4>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <p class="centrado">¡GRACIAS POR SU COMPRA!
+                <br>parzibyte.me</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<style>
+
+    * {
+        font-size: 12px;
+        font-family: 'Arial';
+    }
+    
+    body{
+        width: 200px;
+        max-width: 350px;
+    }
+    
+    td,
+    th,
+    tr {
+        border-top: 1px solid black;
+        border-collapse: collapse;
+    }
+    
+    .title {
+        text-justify: auto;
+    }
+    
+    .centrado {
+        text-align: center;
+        align-content: center;
+    }
+    
+    .Izquierda {
+        text-align: left;
+        align-content: center;
+    }
+    
+    </style>
+    
+    
+    <html>
+        <body>
+            <div class="ticket">
+                <p class="centrado"><b><A style="font-size: 16px;" >APERTURA DE CAJA</A></b>
+                    <br class="title"><b>Fecha: </b><td>{{DateNow}}</td>
+                </p>
+                <br>
+                <div style="border-radius: 0.5; height: 0.1; background-color: black;"> </div>
+                <p class="Izquierda" style="margin-top: -5px;">
+                    <br class="title"> <b>Sucursal       :</b><td>{{Branch}}</td>
+                    <br class="title"> <b>Usuario        :</b><td>{{User}}</td>
+                    <br class="title"> <b>Autorizado Por :</b><td>{{Authorized}}</td>
+                    <br class="title"> <b>Arqueo No.     :</b><td>{{ArqueoNo}}</td>
+                </p>
+                <div style="border-radius: 0.5; height: 0.1; background-color: black;"> </div>
+                <p class="Izquierda" style="margin-top: -5px;">
+                    <br class="title"> <b>  Apertura Caja  :</b>
+                    <br class="title"> <b>  Fondo           : </b><td>{{Fondo}}</td>
+                    <br class="title"> <b> + Total Efectivo : </b><td>{{TotalEfectivo}}</td>
+                    <br class="title"> <b> + Total Tarjetas : </b><td>{{TotalTarjetas}}</td>
+                    <br class="title"> <b> + Total Cheques  : </b><td>{{TotalCheques}}</td>
+                    <br class="title"> <b> - Aligeramientos : </b><td>{{Aligeramientos}}</td>
+                    <br class="title"> <b> - Pagos Varios   :  </b><td>{{PagosVarios}}</td>
+                    <br class="title"> <b> - Retiro Vuelto  :  </b><td>{{RetiroVuelto}}</td>
+                    <br class="title"> <b> Total en Caja    : </b><td>{{TotalCaja}}</td>
+                </p>
+                <div style="border-radius: 0.5; height: 0.1; background-color: black;"> </div>
+                <p class="Izquierda" style="margin-top: 15px;"><b><A style="font-size: 13px;">DESGLOCE DE TARJETAS</A></b>
+                    <br class="title"> <b>  Tarjetas Visa  :</b><td>{{TarjetasVisa}}</td>
+                    <br class="title"> <b>  Tarjeta Credomatic : </b><td>{{tarjetasCredomatic}}</td>
+                </p>
+                <div style="border-radius: 0.5; height: 0.1; background-color: black;"> </div>
+                <p class="Izquierda" style="margin-top: 15px;"><b><A style="font-size: 13px;">MONEDAS EXTRANJERAS</A></b>
+                    <br class="title"> <b>  Total Dolares  :</b><td>{{TotalDolares}}</td>
+                    <br class="title"> <b>  Vuelto Quetzales: </b><td>{{VueltoQuetzales}}</td>
+                </p>
+                <div style="border-radius: 0.5; height: 0.1; background-color: black;"> </div>
+                <p class="Izquierda" style="margin-top: -5px;">
+                    <br class="title"> <b> Total Ventas  :</b><td>{{TotalVentas}}</td>
+                    <br class="title"> <b> Total Impuestos          : </b><td>{{TotalImpuestos}}</td>
+                    <br class="title"> <b> Total Descuentos : </b><td>{{TotalDescuento}}</td>
+                    <br class="title"> <b> Total Propinas : </b><td>{{TotalPropinas}}</td>
+                    <br class="title"> <b> Total Credito  : </b><td>{{TotalCredito}}</td>
+                    <br class="title"> <b> Retiro Fondo: </b><td>{{RetiroFondo}}</td>
+                    <br class="title"> <b> Cantidad Facturas   :  </b><td>{{CantidadFacturas}}</td>
+                    <br class="title"> <b> Cantidad Recibos  :  </b><td>{{CantidadRecibos}}</td>
+                    <br class="title"> <b> Inicial  : </b><td>{{Inicial}}</td>  
+                    <br class="title"> <b> Final  : </b><td>{{Final}}</td> 
+                </p>
+                <div style="border-radius: 0.5; height: 0.1; background-color: black;"> </div>
+                <br>
+                <p class="Izquierda" style="margin-top: -2px;">
+                    <br class="title"> <b>Obsevaciones:</b><br> Apertura de Caja
+                </p>
+                <br>
+                <br>
+                <br>
+                <div style="border-radius: 0.5; height: 0.1; background-color: black;"> </div>
+                <p class="centrado" style="margin-top: 0.5px;"><b>F. Cajero</b></p>
+                <br>
+                <br>
+                <div style="border-radius: 0.5; height: 0.1; background-color: black;"> </div>
+                <p class="centrado" style="margin-top: 0.5px;"><b>F. Autorizado Por</b></p>
+                
+            </div>
+        </body>
+    </html>
+    
+    

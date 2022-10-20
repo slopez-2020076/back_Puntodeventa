@@ -1,0 +1,74 @@
+<style>
+    * {
+    font-size: 12px;
+    font-family: 'Arial';
+}
+
+td,
+th,
+tr {
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}
+
+br {
+    font-weight: bold;
+}
+
+.centrado {
+    text-align: center;
+    align-content: center;
+}
+
+.Izquierda {
+    text-align: left;
+    align-content: center;
+}
+
+body {
+    width: 200px;
+    max-width: 190px;
+}
+
+
+</style>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"> <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="ticket">
+            <p class="centrado"><b style="font-size: 16px;">Boleta Retiro de Efectivo</b>
+                <br class="title"><b>Fecha: </b><td>{{DateNow}}</td>
+            </p>
+            <br>
+            <div style="border-radius: 0.5; height: 0.1; background-color: black;"> </div>
+            <p class="Izquierda" style="margin-top: -5px;">
+                <br class="title"> <b>Sucursal:</b><td>{{Branch}}</td>
+                <br class="title"> <b>Usuario:</b><td>{{User}}</td>
+                <br class="title"> <b>Autorizado Por:</b><td>{{Authorized}}</td>
+            </p>
+            <div style="border-radius: 0.5; height: 0.1; background-color: black;"> </div>
+            <p class="Izquierda" style="margin-top: -5px;">
+                <br class="title"> <b>Aligeramientos:</b><td></td>
+                <br class="title"> <b> Monto Caja: </b><td>{{Encaja}}</td>
+                <br class="title"> <b> Monto Retiro: </b><td>{{retiro}}</td>
+                <br class="title"> <b> Total en Caja: </b><td>{{total}}</td>
+            </p>
+            <div style="border-radius: 0.5; height: 0.1; background-color: black;"> </div>
+            <p class="Izquierda" style="margin-top: -2px;">
+                <br class="title"> <b>Obsevaciones:</b><br> Retiro de Fondo
+            </p>
+            <br>
+            <br>
+            <br>
+            <div style="border-radius: 0.5; height: 0.1; background-color: black;"> </div>
+            <p class="centrado" style="margin-top: 0.5px;"><b>F. Cajero</b></p>
+            <br>
+            <br>
+            <div style="border-radius: 0.5; height: 0.1; background-color: black;"> </div>
+            <p class="centrado" style="margin-top: 0.5px;"><b>F. Autorizado Por</b></p>
+
+        </div>
+    </body>
+</html>
